@@ -1,0 +1,554 @@
+{
+  "name": "Zhixiang Fan",
+  "email": "fzx24@mails.tsinghua.edu.cn",
+  "github": "https://github.com/Char1ss",
+  "intro": "I am a PhD student in Design at Tsinghua University’s Academy of Arts & Design, with a background in landscape architecture. I study how people understand, create and interact with three-dimensional environments.",
+  "research": "I focus on translating spatial design knowledge into forms that are computable and interactive, enabling reconstructed or generated 3D environments to be understood, inspected, and modified.",
+  "projects": [
+    {
+      "id": "semantic-3dgs",
+      "number": "01",
+      "title": "Semantic 3D Gaussian Splatting",
+      "subtitle": "From reconstructed geometry to objects we can query and interact with.",
+      "category": "Spatial understanding",
+      "year": "2026",
+      "tags": [
+        "LangSplat + ResGS",
+        "3D semantics",
+        "Web interaction"
+      ],
+      "summary": "An interactive web system that combines language-aligned 3D Gaussian representations with object-level spatial information. Users can explore a reconstructed scene, select semantic objects and interact through language.",
+      "role": "Semantic processing pipeline, object-state extraction and web interaction system.",
+      "question": "How can a visually reconstructed environment become a scene whose objects and spatial relationships can be queried and used in interaction?",
+      "approach": "The pipeline combines SAM, CLIP, LangSplat and ResGS for open-vocabulary 3D semantics. DBSCAN groups spatial features into object locations; an explicit world state connects these objects to a Three.js viewer and LLM interaction.",
+      "outcome": "The prototype connects offline semantic feature processing with real-time browser rendering, semantic picking and language-based spatial interaction. It supports scenes containing millions of Gaussians.",
+      "scope": "System development integrating existing reconstruction and semantic representation methods.",
+      "mediaLabel": "Semantic scene / interactive viewer",
+      "mediaNote": "Scene exploration and semantic selection",
+      "cover": "assets/projects/semantic-3dgs/cover.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/projects/semantic-3dgs/media-07.webp",
+          "caption": "Reconstruction and interaction system overview",
+          "alt": "Reconstruction and interaction system overview"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/semantic-3dgs/media-06.webp",
+          "caption": "Semantic processing workflow",
+          "alt": "Semantic processing workflow"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/semantic-3dgs/media-05.webp",
+          "caption": "RGB scenes and semantic feature visualizations",
+          "alt": "RGB scenes and semantic feature visualizations"
+        },
+        {
+          "type": "video",
+          "src": "assets/projects/semantic-3dgs/media-04.mp4",
+          "poster": "assets/projects/semantic-3dgs/media-04-poster.jpg",
+          "caption": "Scene exploration and interaction demonstration"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/semantic-3dgs/media-02.webp",
+          "caption": "Object-level interaction in the browser",
+          "alt": "Object-level interaction in the browser"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/semantic-3dgs/media-01.webp",
+          "caption": "Language interaction in the reconstructed scene",
+          "alt": "Language interaction in the reconstructed scene"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "axis-waic",
+      "number": "02",
+      "title": "Axis at WAIC",
+      "subtitle": "Minecraft scene creation, character skins and motion-based play.",
+      "category": "Creative tools & embodied play",
+      "year": "2026",
+      "tags": [
+        "Minecraft",
+        "Generative workflows",
+        "Embodied interaction"
+      ],
+      "summary": "A team-built creative platform presented at WAIC, connecting AI-assisted Minecraft scene and skin generation with body-driven gameplay. Minecraft serves as a concrete environment for creating content and trying it through interaction.",
+      "role": "World model technology and product lead; platform architecture, model integration and web runtime development.",
+      "question": "How can content generation and physical interaction become part of one accessible creative workflow?",
+      "approach": "Axis coordinates text, image and 3D generation services with task state and a scene runtime. The WAIC demonstration brings together scene creation, character skin generation and camera-based motion interaction.",
+      "outcome": "A working product and exhibition demonstration connecting creation with play. The platform is being extended beyond its initial Minecraft environment.",
+      "scope": "Collaborative product. My work focuses on the creation platform and its technical integration. The motion-recognition algorithms were developed primarily by teammates.",
+      "mediaLabel": "WAIC / product demonstration",
+      "mediaNote": "Scenes, character skins and body-driven play",
+      "cover": "assets/projects/axis-waic/cover.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/projects/axis-waic/media-02.webp",
+          "caption": "Reconstruction and generation workflows",
+          "alt": "Reconstruction and generation workflows"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/axis-waic/media-01.webp",
+          "caption": "Character skins and camera-based body interaction",
+          "alt": "Character skins and camera-based body interaction"
+        },
+        {
+          "type": "video",
+          "src": "assets/projects/axis-waic/media-03.mp4",
+          "poster": "assets/projects/axis-waic/media-03-poster.jpg",
+          "caption": "Motion interaction at the exhibition"
+        },
+        {
+          "type": "video",
+          "src": "assets/projects/axis-waic/media-04.mp4",
+          "poster": "assets/projects/axis-waic/media-04-poster.jpg",
+          "caption": "Platform creation workflow"
+        },
+        {
+          "type": "video",
+          "src": "assets/projects/axis-waic/media-05.mp4",
+          "poster": "assets/projects/axis-waic/media-05-poster.jpg",
+          "caption": "Additional product demonstration"
+        }
+      ],
+      "links": [
+        {
+          "label": "Axis platform",
+          "url": "https://axis.open-world.cn"
+        }
+      ],
+      "introLink": {
+        "label": "axis.open-world.cn",
+        "url": "https://axis.open-world.cn"
+      }
+    },
+    {
+      "id": "surgical-4dgs",
+      "number": "03",
+      "title": "4D Reconstruction of Suturing",
+      "subtitle": "Reconstructing a changing workspace from four camera views.",
+      "category": "Dynamic reconstruction",
+      "year": "2026",
+      "tags": [
+        "4DGS",
+        "Four-camera capture",
+        "Self-collected data"
+      ],
+      "summary": "A medical reconstruction project using four camera views and self-collected recordings of a doctor performing suturing. We use 4D Gaussian Splatting to reconstruct the changing scene over time.",
+      "role": "Work on the multi-camera capture and 4D reconstruction pipeline within a collaborative project.",
+      "question": "How can a compact multi-camera setup capture and reconstruct a fine-grained procedure with moving hands, instruments and frequent occlusion?",
+      "approach": "Our team records the suturing procedure from four camera views and reconstructs the temporal scene using 4D Gaussian Splatting. The work connects data acquisition with dynamic reconstruction and inspection of the resulting sequence.",
+      "outcome": "A reconstruction prototype on self-collected suturing recordings. The project extends earlier practical work with dynamic Gaussian reconstruction on public datasets.",
+      "scope": "Ongoing research on dynamic reconstruction from self-collected, four-camera recordings.",
+      "mediaLabel": "Four views / one dynamic scene",
+      "mediaNote": "Capture setup and reconstructed suturing sequence",
+      "cover": "assets/projects/surgical-4dgs/cover.webp",
+      "gallery": [
+        {
+          "type": "video",
+          "src": "assets/projects/surgical-4dgs/media-01.mp4",
+          "poster": "assets/projects/surgical-4dgs/media-01-poster.jpg",
+          "caption": "Four-camera recording of the suturing procedure"
+        },
+        {
+          "type": "video",
+          "src": "assets/projects/surgical-4dgs/media-03.mp4",
+          "poster": "assets/projects/surgical-4dgs/media-03-poster.jpg",
+          "caption": "Cosmos / SutureBot inference reproduction on reference data; separate from our self-collected four-camera reconstruction."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "garden-skills",
+      "number": "04",
+      "title": "Design Skills for Chinese Gardens",
+      "subtitle": "Making spatial design knowledge inspectable and executable.",
+      "category": "Design knowledge & human–AI creation",
+      "year": "2026",
+      "tags": [
+        "Design Skills",
+        "Spatial constraints",
+        "Agent-driven creation"
+      ],
+      "summary": "I describe spatial design rules in natural language and organize them into reusable Design Skills that guide a lightweight LLM to construct scenes and models. Examples include Chinese gardens, temples and imagined mountain landscapes.",
+      "role": "Spatial design representation, skill system and scene-generation workflow.",
+      "question": "How can a designer’s knowledge of movement, viewing and spatial sequence become usable by a generation agent while remaining open to human judgment?",
+      "approach": "Spatial design rules are expressed in language and organized into reusable Design Skills. A lightweight LLM uses these skills to build the scenes and models shown here. WorldSpec represents objects and spatial relationships independently of the rendering backend; navigation and visibility checks support local repair. Users can edit parameters, lock regions and inspect the design rationale.",
+      "outcome": "An implemented creation–inspection–repair workflow with Three.js and Minecraft outputs, including accept/reject and undo/redo operations. Current scenes provide a testbed for spatial relationships and interaction.",
+      "scope": "Research prototype. Cultural design claims require domain validation; the system does not treat aesthetics as a universal numerical score.",
+      "mediaLabel": "Intent / spatial relationships / scene",
+      "mediaNote": "Design principles, generated scenes and local revision",
+      "cover": "assets/projects/garden-skills/cover-v2.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/projects/garden-skills/immortal-mountain.webp",
+          "caption": "Immortal mountain scene built by a lightweight LLM guided by spatial Design Skills.",
+          "alt": "Immortal mountain scene"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/garden-skills/temple.webp",
+          "caption": "Temple scene built by a lightweight LLM guided by spatial Design Skills.",
+          "alt": "Temple scene"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/garden-skills/garden.webp",
+          "caption": "Garden scene built by a lightweight LLM guided by spatial Design Skills.",
+          "alt": "Garden scene"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/garden-skills/media-00.webp",
+          "caption": "Architecture references and procedural scene studies",
+          "alt": "Architecture references and procedural scene studies"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/garden-skills/media-01.webp",
+          "caption": "Spatial elements, plans and architectural details",
+          "alt": "Spatial elements, plans and architectural details"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/garden-skills/media-02.webp",
+          "caption": "Object generation and design references",
+          "alt": "Object generation and design references"
+        }
+      ],
+      "links": []
+    }
+  ],
+  "publications": [
+    {
+      "title": "A Zero-Parameter EEG-fNIRS Rule Ensemble for Cross-Subject Emotion Tracking",
+      "authors": "Hua Xin, Kun Zhu and Zhixiang Fan",
+      "venue": "ACM Multimedia · MRAC Workshop / MER Challenge",
+      "year": "2026",
+      "status": "Accepted · Workshop paper",
+      "url": "",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/eeg-figure-1.png",
+          "caption": "Figure 1",
+          "alt": "EEG-fNIRS emotion tracking — Figure 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/eeg-figure-2.png",
+          "caption": "Figure 2",
+          "alt": "EEG-fNIRS emotion tracking — Figure 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/eeg-figure-3.png",
+          "caption": "Figure 3",
+          "alt": "EEG-fNIRS emotion tracking — Figure 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/eeg-figure-6.jpg",
+          "caption": "Figure 6",
+          "alt": "EEG-fNIRS emotion tracking — Figure 6"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/figure-original-1.png",
+          "caption": "Figure 1",
+          "alt": "A Zero-Parameter EEG-fNIRS Rule Ensemble for Cross-Subject Emotion Tracking — Figure 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/figure-original-2.png",
+          "caption": "Figure 2",
+          "alt": "A Zero-Parameter EEG-fNIRS Rule Ensemble for Cross-Subject Emotion Tracking — Figure 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/figure-original-3.png",
+          "caption": "Figure 3",
+          "alt": "A Zero-Parameter EEG-fNIRS Rule Ensemble for Cross-Subject Emotion Tracking — Figure 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/emotion-tracking/figure-original-4.png",
+          "caption": "Figure 4",
+          "alt": "A Zero-Parameter EEG-fNIRS Rule Ensemble for Cross-Subject Emotion Tracking — Figure 4"
+        }
+      ],
+      "pdf": "assets/publications/emotion-tracking/paper.pdf"
+    },
+    {
+      "title": "Endless Life of Stone: An Embodied Journey into the Universe within the Void",
+      "authors": "Zhixiang Fan, Ran Yan and Yan Huang",
+      "venue": "ACM Multimedia · Interactive Art",
+      "year": "2026",
+      "status": "Accepted · Interactive art",
+      "url": "",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/publications/stone/figure-01.webp",
+          "caption": "Figure 1",
+          "alt": "Endless Life of Stone: An Embodied Journey into the Universe within the Void — Figure 1"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/stone/figure-03.webp",
+          "caption": "Figure 2",
+          "alt": "Endless Life of Stone: An Embodied Journey into the Universe within the Void — Figure 2"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/stone/figure-04.webp",
+          "caption": "Figure 3",
+          "alt": "Endless Life of Stone: An Embodied Journey into the Universe within the Void — Figure 3"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/stone/figure-05.webp",
+          "caption": "Figure 4",
+          "alt": "Endless Life of Stone: An Embodied Journey into the Universe within the Void — Figure 4"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/stone/figure-06.webp",
+          "caption": "Figure 5",
+          "alt": "Endless Life of Stone: An Embodied Journey into the Universe within the Void — Figure 5"
+        }
+      ],
+      "pdf": "assets/publications/stone/paper.pdf"
+    },
+    {
+      "title": "Research on the spatial distribution and influencing factors of hydronyms in cities along the Grand Canal",
+      "authors": "Yan Huang, Zhixiang Fan, Chongxiao Wang and Yuwei Wu",
+      "venue": "Humanities and Social Sciences Communications",
+      "year": "2026",
+      "status": "Journal article",
+      "url": "https://doi.org/10.1057/s41599-026-07165-4",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/publications/hydronyms/figure-01.webp",
+          "caption": "Fig. 2 Research framework",
+          "alt": "Research on the spatial distribution and influencing factors of hydronyms in cities along the Grand Canal — Fig. 2 Research framework"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/hydronyms/figure-02.webp",
+          "caption": "Fig. 4 Distribution of hydronyms across cities along the Grand Canal",
+          "alt": "Research on the spatial distribution and influencing factors of hydronyms in cities along the Grand Canal — Fig. 4 Distribution of hydronyms across cities along the Grand Canal"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/hydronyms/figure-03.webp",
+          "caption": "Fig. 7 Results of spatial autocorrelation for hydronyms",
+          "alt": "Research on the spatial distribution and influencing factors of hydronyms in cities along the Grand Canal — Fig. 7 Results of spatial autocorrelation for hydronyms"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/hydronyms/figure-04.webp",
+          "caption": "Fig. 8 Spatial distribution of natural geographical factors",
+          "alt": "Research on the spatial distribution and influencing factors of hydronyms in cities along the Grand Canal — Fig. 8 Spatial distribution of natural geographical factors"
+        }
+      ]
+    },
+    {
+      "title": "Evaluating visual experience in heritage-rich areas: A case study of the Inner Ring Road of West Lake, Hangzhou",
+      "authors": "Yan Huang, Zhixiang Fan, Chongxiao Wang, Ran Yan, Yilu Shi and You Li",
+      "venue": "Frontiers of Architectural Research",
+      "year": "2026",
+      "status": "Journal article",
+      "url": "https://doi.org/10.1016/j.foar.2025.06.011",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/publications/visual-experience/figure-00.webp",
+          "caption": "Fig.1",
+          "alt": "Evaluating visual experience in heritage-rich areas: A case study of the Inner Ring Road of West Lake, Hangzhou — Fig.1"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/visual-experience/figure-02.webp",
+          "caption": "Fig.2",
+          "alt": "Evaluating visual experience in heritage-rich areas: A case study of the Inner Ring Road of West Lake, Hangzhou — Fig.2"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/visual-experience/figure-03.webp",
+          "caption": "Fig.4",
+          "alt": "Evaluating visual experience in heritage-rich areas: A case study of the Inner Ring Road of West Lake, Hangzhou — Fig.4"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/visual-experience/figure-01.webp",
+          "caption": "Fig.16",
+          "alt": "Evaluating visual experience in heritage-rich areas: A case study of the Inner Ring Road of West Lake, Hangzhou — Fig.16"
+        }
+      ]
+    },
+    {
+      "title": "The Spatial Relationship between Cities and Mountains in Jiangnan Region in the Qing Dynasty Based on Historical Texts",
+      "authors": "Zhixiang Fan, Tianrui Song and Xiaolan Tang",
+      "venue": "ACM Journal on Computing and Cultural Heritage",
+      "year": "2024",
+      "status": "Journal article",
+      "url": "https://doi.org/10.1145/3648002",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/publications/cities-mountains/figure-01.webp",
+          "caption": "Fig.1",
+          "alt": "The Spatial Relationship between Cities and Mountains in Jiangnan Region in the Qing Dynasty Based on Historical Texts — Fig.1"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/cities-mountains/figure-02.webp",
+          "caption": "Fig.3",
+          "alt": "The Spatial Relationship between Cities and Mountains in Jiangnan Region in the Qing Dynasty Based on Historical Texts — Fig.3"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/cities-mountains/figure-03.webp",
+          "caption": "Fig.4",
+          "alt": "The Spatial Relationship between Cities and Mountains in Jiangnan Region in the Qing Dynasty Based on Historical Texts — Fig.4"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/cities-mountains/figure-04.webp",
+          "caption": "Fig.6",
+          "alt": "The Spatial Relationship between Cities and Mountains in Jiangnan Region in the Qing Dynasty Based on Historical Texts — Fig.6"
+        },
+        {
+          "type": "image",
+          "src": "assets/publications/cities-mountains/figure-05.webp",
+          "caption": "Fig.8",
+          "alt": "The Spatial Relationship between Cities and Mountains in Jiangnan Region in the Qing Dynasty Based on Historical Texts — Fig.8"
+        }
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "src": "assets/interests/sketch-01.webp",
+      "thumb": "assets/interests/sketch-01-thumb.webp",
+      "alt": "Modern architecture study",
+      "width": 1792,
+      "height": 2560
+    },
+    {
+      "src": "assets/interests/sketch-02.webp",
+      "thumb": "assets/interests/sketch-02-thumb.webp",
+      "alt": "Garden architecture study",
+      "width": 2556,
+      "height": 1915
+    },
+    {
+      "src": "assets/interests/sketch-03.webp",
+      "thumb": "assets/interests/sketch-03-thumb.webp",
+      "alt": "Village and landscape study",
+      "width": 2528,
+      "height": 1888
+    },
+    {
+      "src": "assets/interests/sketch-04.webp",
+      "thumb": "assets/interests/sketch-04-thumb.webp",
+      "alt": "Mountain and rock study",
+      "width": 1664,
+      "height": 2400
+    },
+    {
+      "src": "assets/interests/sketch-05.webp",
+      "thumb": "assets/interests/sketch-05-thumb.webp",
+      "alt": "Bridge and waterside study",
+      "width": 2556,
+      "height": 1915
+    },
+    {
+      "src": "assets/interests/sketch-06.webp",
+      "thumb": "assets/interests/sketch-06-thumb.webp",
+      "alt": "Waterside garden study",
+      "width": 2556,
+      "height": 1909
+    },
+    {
+      "src": "assets/interests/sketch-07.webp",
+      "thumb": "assets/interests/sketch-07-thumb.webp",
+      "alt": "Pavilion and courtyard study",
+      "width": 2556,
+      "height": 1798
+    },
+    {
+      "src": "assets/interests/sketch-08.webp",
+      "thumb": "assets/interests/sketch-08-thumb.webp",
+      "alt": "Architecture and planting study",
+      "width": 1915,
+      "height": 2556
+    },
+    {
+      "src": "assets/interests/sketch-09.webp",
+      "thumb": "assets/interests/sketch-09-thumb.webp",
+      "alt": "Courtyard study",
+      "width": 2554,
+      "height": 1865
+    },
+    {
+      "src": "assets/interests/sketch-10.webp",
+      "thumb": "assets/interests/sketch-10-thumb.webp",
+      "alt": "Terrace and architecture study",
+      "width": 2556,
+      "height": 1870
+    },
+    {
+      "src": "assets/interests/sketch-11.webp",
+      "thumb": "assets/interests/sketch-11-thumb.webp",
+      "alt": "Pavilion and rockery study",
+      "width": 2480,
+      "height": 3507
+    }
+  ],
+  "practice": [
+    {
+      "dates": "Mar 2026–present",
+      "organization": "Beijing Qijie Interactive",
+      "role": "World Model Technology & Product Lead",
+      "tasks": [
+        "Lead Axis development, building server infrastructure, model-service integrations and a web 3D runtime from scratch to connect scene generation with interactive applications.",
+        "Develop prototypes for VR/AR applications and embodied interaction, connecting reconstructed or generated environments with user exploration and scene editing.",
+        "Investigate streaming first-person video understanding for personal agents, using M3-Agent and YOLO-assisted processing to study how people, objects and events are captured in memory.",
+        "Design a multimodal processing workspace for personal-agent development, preserving raw inputs and generating memory text with traceable source evidence and processing history."
+      ]
+    },
+    {
+      "dates": "Jun–Aug 2026",
+      "organization": "Beijing Yuaiweiwu",
+      "role": "AI Product & Algorithm Intern",
+      "tasks": [
+        "Evaluate AI tutoring interactions, including answer guessing, verbalization of mathematical formulas and behavior across long conversations.",
+        "Build resumable extraction and validation workflows for 592 conversations and 9,072 contextual messages from approximately 11 GB of cloud JSONL data.",
+        "Turn real learning conversations into traceable model issues and product feedback to inform data cleaning, dialogue strategies and interaction improvements."
+      ]
+    },
+    {
+      "dates": "Jun–Sep 2025",
+      "organization": "Dongfeng R&D Institute",
+      "role": "AI Center Intern · Autonomous Driving Simulation",
+      "tasks": [
+        "Construct Wuhan road networks and 3D environments using OSM, RoadRunner, SketchUp and Blender, and integrate them into UE4/CARLA.",
+        "Investigate 3DGS scene reconstruction and prototype a closed perception–decision–control loop for autonomous driving.",
+        "Design scenario tests and quantitative evaluation workflows to reproduce complex road conditions and assess end-to-end driving models."
+      ]
+    }
+  ]
+}
