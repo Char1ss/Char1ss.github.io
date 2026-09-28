@@ -246,13 +246,13 @@
         },
         {
           "type": "image",
-          "src": "assets/publications/emotion-tracking/eeg-figure-2.png",
+          "src": "assets/publications/emotion-tracking/eeg-figure-2.jpg",
           "caption": "Figure 2",
           "alt": "EEG-fNIRS emotion tracking — Figure 2"
         },
         {
           "type": "image",
-          "src": "assets/publications/emotion-tracking/eeg-figure-3.png",
+          "src": "assets/publications/emotion-tracking/eeg-figure-3.jpg",
           "caption": "Figure 3",
           "alt": "EEG-fNIRS emotion tracking — Figure 3"
         },
