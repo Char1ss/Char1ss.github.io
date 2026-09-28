@@ -528,7 +528,8 @@
         "Develop prototypes for VR/AR applications and embodied interaction, connecting reconstructed or generated environments with user exploration and scene editing.",
         "Investigate streaming first-person video understanding for personal agents, using M3-Agent and YOLO-assisted processing to study how people, objects and events are captured in memory.",
         "Design a multimodal processing workspace for personal-agent development, preserving raw inputs and generating memory text with traceable source evidence and processing history."
-      ]
+      ],
+      "logo": "assets/practice/qijie.jpg"
     },
     {
       "dates": "Jun–Aug 2026",
@@ -538,7 +539,8 @@
         "Evaluate AI tutoring interactions, including answer guessing, verbalization of mathematical formulas and behavior across long conversations.",
         "Build resumable extraction and validation workflows for 592 conversations and 9,072 contextual messages from approximately 11 GB of cloud JSONL data.",
         "Turn real learning conversations into traceable model issues and product feedback to inform data cleaning, dialogue strategies and interaction improvements."
-      ]
+      ],
+      "logo": "assets/practice/yuaiweiwu.png"
     },
     {
       "dates": "Jun–Sep 2025",
@@ -548,7 +550,8 @@
         "Construct Wuhan road networks and 3D environments using OSM, RoadRunner, SketchUp and Blender, and integrate them into UE4/CARLA.",
         "Investigate 3DGS scene reconstruction and prototype a closed perception–decision–control loop for autonomous driving.",
         "Design scenario tests and quantitative evaluation workflows to reproduce complex road conditions and assess end-to-end driving models."
-      ]
+      ],
+      "logo": "assets/practice/dongfeng.png"
     }
   ]
 }

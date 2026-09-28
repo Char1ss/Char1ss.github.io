@@ -60,7 +60,7 @@ def publication(p):
 
 def experience(p):
     tasks=''.join(f'<li>{e(t)}</li>' for t in p['tasks'])
-    return f'<article class="experience"><span>{e(p["dates"])}</span><div><h3>{e(p["organization"])}</h3><p class="role">{e(p["role"])}</p><ul class="practice-tasks">{tasks}</ul></div></article>'
+    return f'<article class="experience"><span>{e(p["dates"])}</span><div class="experience-body"><div class="experience-heading"><span class="practice-logo"><img src="{e(p["logo"])}" alt="" width="56" height="56" loading="lazy" decoding="async"></span><div><h3>{e(p["organization"])}</h3><p class="role">{e(p["role"])}</p></div></div><ul class="practice-tasks">{tasks}</ul></div></article>'
 
 def interests():
     images=''.join(f'<a class="sketch" href="{e(m["src"])}" aria-haspopup="dialog" aria-label="View drawing: {e(m["alt"])}"><img src="{e(m["thumb"])}" alt="{e(m["alt"])}" width="{m["width"]}" height="{m["height"]}" loading="lazy" decoding="async"></a>' for m in data['interests'])
