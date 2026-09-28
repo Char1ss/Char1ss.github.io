@@ -15,3 +15,4 @@
 /* Practice organization marks retain their original colors and proportions. */
 .experience-body{min-width:0}.experience-heading{display:flex;align-items:center;gap:18px}.experience-heading>div{min-width:0}.practice-logo{display:flex;align-items:center;justify-content:center;width:56px;height:56px;flex:0 0 56px}.practice-logo img{display:block;width:100%;height:100%;object-fit:contain}.practice-logo img[src$="qijie.jpg"]{width:74px;height:74px;max-width:none}.experience .practice-tasks{margin-left:74px}
 @media(max-width:600px){.experience-heading{gap:14px}.practice-logo{width:44px;height:44px;flex-basis:44px}.practice-logo img[src$="qijie.jpg"]{width:58px;height:58px}.experience .practice-tasks{margin-left:0}.experience-heading h3{font-size:17px}}
+@media(min-width:601px){.practice-logo{transform:translateX(-32px)}}
