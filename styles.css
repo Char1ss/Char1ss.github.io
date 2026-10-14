@@ -19,3 +19,6 @@
 
 /* Fill work thumbnails while preserving the full AXIS cover text. */
 .project-visual .project-cover{aspect-ratio:16/9;object-fit:cover}
+
+/* Preserve the teaching task card and its text edge to edge. */
+.project-visual[href="projects/ai-teaching-practice/"] .project-cover{aspect-ratio:904/600}

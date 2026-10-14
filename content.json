@@ -227,6 +227,64 @@
         }
       ],
       "links": []
+    },
+    {
+      "id": "ai-teaching-practice",
+      "number": "05",
+      "title": "AI Teaching Practice: Community Design",
+      "subtitle": "Exploring communities for home life and hybrid work through AI tools and resident role-play.",
+      "category": "AI teaching practice",
+      "year": "",
+      "tags": [
+        "Teaching assistant",
+        "AI-assisted design",
+        "Community renewal"
+      ],
+      "summary": "As a teaching assistant, I supported a community design course using Beijing Pixel as its site. Students used AI tools and game-inspired resident cards to connect everyday needs with spatial proposals for home life and hybrid work.",
+      "role": "Teaching assistant for a community design course.",
+      "questionTitle": "Course context",
+      "question": "The course focused on emerging spatial needs in communities where home life and hybrid work overlap. Taking Beijing Pixel as the design site, students began with everyday routines and patterns of behavior to consider how a neighborhood can support work, social interaction, health and emotional connection.",
+      "approachTitle": "AI tools & resident role-play",
+      "approach": "Students used AI tools for problem discovery, user analysis, scenario building and the translation of insights into spatial design. Game-inspired resident role cards encouraged them to trace activities from different residents’ perspectives. By connecting virtual management logic with physical spatial experience, the course explored sustainable, participatory approaches to community renewal.",
+      "outcomeTitle": "Collaborative learning process",
+      "outcome": "Within a problem-led learning framework, students worked in groups through the full process of research, concept development and design communication. The task cards, resident role card and classroom photographs document this teaching practice, linking individual needs to discussions about shared community spaces.",
+      "scope": "Teaching assistant experience. The materials shown document the course and its collaborative learning process.",
+      "mediaLabel": "Resident roles / everyday needs / community space",
+      "mediaNote": "Beijing Pixel · home life and hybrid work · AI-assisted community design",
+      "cover": "assets/projects/ai-teaching-practice/cover.png",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/projects/ai-teaching-practice/cover.png",
+          "caption": "Task card: connecting spatial comfort, work continuity and everyday community needs.",
+          "alt": "Pixel-art task card for a combined living and working environment"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/ai-teaching-practice/resident-role-card.webp",
+          "caption": "Resident role card: identity, work patterns, tools and everyday needs as a starting point for spatial analysis.",
+          "alt": "Game-inspired resident role card with profile, attributes and everyday objects"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/ai-teaching-practice/task-card-2.webp",
+          "caption": "Task card: balancing content creation, pet companionship, daily routines and community fit.",
+          "alt": "Task card mapping a resident’s live-streaming, home and community needs"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/ai-teaching-practice/classroom-role-cards.webp",
+          "caption": "Classroom activity using printed resident role cards.",
+          "alt": "Participants examining a printed resident role card in the classroom"
+        },
+        {
+          "type": "image",
+          "src": "assets/projects/ai-teaching-practice/classroom-discussion.webp",
+          "caption": "Group discussion around role cards, models and spatial design proposals.",
+          "alt": "Classroom group gathered around role cards and design models"
+        }
+      ],
+      "links": []
     }
   ],
   "publications": [
