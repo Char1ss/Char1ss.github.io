@@ -6,8 +6,48 @@
   "research": "I focus on translating spatial design knowledge into forms that are computable and interactive, enabling reconstructed or generated 3D environments to be understood, inspected, and modified.",
   "projects": [
     {
-      "id": "semantic-3dgs",
+      "id": "friend",
       "number": "01",
+      "title": "friend. — Personal Data Wallet",
+      "subtitle": "One personal context that grows with you, across apps, devices and AI agents.",
+      "category": "Personal AI & memory",
+      "year": "2026",
+      "tags": [
+        "Personal data wallet",
+        "Shared memory",
+        "MCP"
+      ],
+      "summary": "A personal data wallet that brings conversations, meeting notes and everyday records into one place. friend. connects this growing personal context to AI agents through MCP, so they can understand the user without starting from scratch.",
+      "role": "Personal project: friend., a data wallet and memory system for AI agents.",
+      "questionTitle": "The idea",
+      "question": "Personal context is scattered across apps, devices and platforms. friend. brings it together into a persistent memory that users can review and choose to share, helping AI agents provide relevant assistance without repeatedly asking for the same background.",
+      "approachTitle": "Data, evidence & shared context",
+      "approach": "The local memory application organizes files, conversations and everyday records while preserving original material and evidence links. A WebUI supports review and search; MCP connects the memory to agents such as Codex and Claude. Phone recordings, Notion sync and an information-source API provide additional ways to bring context into the same system.",
+      "outcomeTitle": "Published project",
+      "outcome": "The project website introduces friend. and its approach to personal context. The public GitHub repository provides documentation and downloadable releases of friend. Memory for macOS on Apple Silicon, Windows and Linux.",
+      "scope": "Memories, files and evidence are stored on the user’s computer. Content used for model processing is sent to configured model endpoints or the friend. account model service.",
+      "mediaLabel": "Personal data / shared memory / AI agents",
+      "mediaNote": "Personal data ownership and shared context for AI agents",
+      "cover": "assets/projects/friend/cover.png",
+      "gallery": [],
+      "introLink": {
+        "url": "https://friend.open-world.cn/",
+        "label": "Visit friend."
+      },
+      "links": [
+        {
+          "url": "https://friend.open-world.cn/",
+          "label": "Project website"
+        },
+        {
+          "url": "https://github.com/OpenWorld-Agent/friend.",
+          "label": "GitHub · releases & documentation"
+        }
+      ]
+    },
+    {
+      "id": "semantic-3dgs",
+      "number": "02",
       "title": "Semantic 3D Gaussian Splatting",
       "subtitle": "From reconstructed geometry to objects we can query and interact with.",
       "category": "Spatial understanding",
@@ -68,7 +108,7 @@
     },
     {
       "id": "axis-waic",
-      "number": "02",
+      "number": "03",
       "title": "Axis at WAIC",
       "subtitle": "Minecraft scene creation, character skins and motion-based play.",
       "category": "Creative tools & embodied play",
@@ -132,7 +172,7 @@
     },
     {
       "id": "surgical-4dgs",
-      "number": "03",
+      "number": "04",
       "title": "4D Reconstruction of Suturing",
       "subtitle": "Reconstructing a changing workspace from four camera views.",
       "category": "Dynamic reconstruction",
@@ -169,7 +209,7 @@
     },
     {
       "id": "garden-skills",
-      "number": "04",
+      "number": "05",
       "title": "Design Skills for Chinese Gardens",
       "subtitle": "Making spatial design knowledge inspectable and executable.",
       "category": "Design knowledge & human–AI creation",
@@ -230,7 +270,7 @@
     },
     {
       "id": "ai-teaching-practice",
-      "number": "05",
+      "number": "06",
       "title": "AI Teaching Practice: Community Design",
       "subtitle": "Exploring communities for home life and hybrid work through AI tools and resident role-play.",
       "category": "AI teaching practice",

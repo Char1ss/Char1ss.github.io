@@ -22,3 +22,6 @@
 
 /* Preserve the teaching task card and its text edge to edge. */
 .project-visual[href="projects/ai-teaching-practice/"] .project-cover{aspect-ratio:904/600}
+
+/* Keep every line of the friend. wordmark cover visible. */
+.project-visual[href="projects/friend/"] .project-cover{aspect-ratio:2484/1066;object-fit:contain}

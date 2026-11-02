@@ -10,7 +10,7 @@
 - 中国古典园林 Design Skills。
 - 五项论文成果，以及英文 CV。
 
-五个项目均有独立页面，包含 AI 教学实践：以北京像素小区为场地的社区设计助教经历。已接入用户提供的四张封面、项目图片及六段视频，五篇论文共 22 张配图。视频转换为 H.264 MP4，图片压缩为 WebP，原始素材不变。
+六个项目均有独立页面，包含 AI 教学实践：以北京像素小区为场地的社区设计助教经历。已接入用户提供的四张封面、项目图片及六段视频，五篇论文共 22 张配图。视频转换为 H.264 MP4，图片压缩为 WebP，原始素材不变。
 
 网站为白底黑字，媒体保留原色。项目详情页与论文配图使用原生横向滚动画廊，支持左右按钮、触摸滑动、键盘方向键。手绘、项目和论文图片点击后在当前页面的弹窗中放大，支持左右切图、Esc、关闭按钮及点击遮罩关闭；关闭后焦点返回原图。普通链接在当前标签页打开。无自动轮播，切出可见区域的视频会暂停。
 
@@ -34,6 +34,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 每个项目的媒体放在对应目录：
 
 ```text
+assets/projects/friend/
 assets/projects/semantic-3dgs/
 assets/projects/axis-waic/
 assets/projects/surgical-4dgs/
@@ -77,3 +78,5 @@ assets/projects/ai-teaching-practice/
 4. 等待 GitHub Pages 部署完成，访问 `https://char1ss.github.io/`。
 
 已生成的 HTML 可以直接发布，不依赖 GitHub Actions 构建，也无需上传任何服务器凭据。
+
+最新项目：friend. 个人数据钱包，列于 Selected work 首位，附官网及公开发布仓库链接。
