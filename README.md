@@ -1,6 +1,6 @@
 # Zhixiang Fan — Research portfolio
 
-英文静态研究主页，目标地址 `https://char1ss.github.io/`。无前端依赖、无分析追踪，无需后台服务器。
+中英文静态研究主页，目标地址 `https://char1ss.github.io/`。无前端依赖、无分析追踪，无需后台服务器。
 
 ## 内容
 
@@ -80,3 +80,9 @@ assets/projects/ai-teaching-practice/
 已生成的 HTML 可以直接发布，不依赖 GitHub Actions 构建，也无需上传任何服务器凭据。
 
 最新项目：friend. 个人数据钱包，列于 Selected work 首位，附官网及公开发布仓库链接。
+
+## 中英文切换
+
+导航栏的「中文 / English」按钮切换首页和全部项目详情，包含正文、图片说明与无障碍标签。选择保存在当前浏览器中；链接参数 `?lang=zh` 或 `?lang=en` 优先于已保存的选择，并随站内页面导航保留。英文 CV、原始图片和视频内容保持原样。
+
+英文内容仍在 `content.json`；中文译文在 `translations.zh.json`，以英文原文为键。修改英文时同步更新对应译文，再运行 `python3 build.py`。语言逻辑在 `i18n.js`，画廊逻辑在 `gallery-core.js`；构建会将两者与译文合并为 `gallery.js`，不要直接编辑生成文件。禁用 JavaScript 时显示英文原始页面。
