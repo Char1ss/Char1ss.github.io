@@ -34,3 +34,14 @@ html:lang(zh-CN) .project-hero h1{line-height:1.4;letter-spacing:-.5px}
 html:lang(zh-CN) .project h3{line-height:1.5;letter-spacing:0}
 html:lang(zh-CN) .project-summary,html:lang(zh-CN) .project-copy p{line-height:1.95}
 @media(max-width:600px){nav{gap:12px}.language-toggle{font-size:12px;padding:3px 9px}}
+
+/* Small internship image strip; full images stay uncropped in the lightbox. */
+.practice-gallery{margin-left:74px;margin-top:20px}
+.practice-gallery .compact{margin-top:0}
+.practice-gallery .carousel-track{gap:10px}
+.practice-gallery .slide{flex-basis:calc((100% - 50px)/6)}
+.practice-gallery .slide img{height:auto;aspect-ratio:16/10;object-fit:cover}
+.practice-gallery .slide figcaption{font-size:10px;line-height:1.45;margin-top:7px}
+.practice-gallery .carousel-bar{margin-top:10px}
+@media(max-width:850px){.practice-gallery .slide{flex-basis:calc((100% - 20px)/3)}}
+@media(max-width:600px){.practice-gallery{margin-left:0}.practice-gallery .slide{flex-basis:42%}}

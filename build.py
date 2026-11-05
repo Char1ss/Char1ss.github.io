@@ -17,11 +17,12 @@ def footer():
     return '''<footer class="footer"><span>Zhixiang Fan · Tsinghua University</span><a href="mailto:fzx24@mails.tsinghua.edu.cn">fzx24@mails.tsinghua.edu.cn ↗</a></footer></div>'''
 
 def document(title, description, body, prefix='', path=''):
+    asset_version = 'frameworks-20261105' if path else 'practice-20261105'
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(description)}">
 <meta name="theme-color" content="#ffffff"><meta property="og:type" content="website"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}">
-<link rel="canonical" href="https://char1ss.github.io/{path}"><link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}styles.css?v=frameworks-20261105"><script src="{prefix}gallery.js?v=frameworks-20261105" defer></script></head>
+<link rel="canonical" href="https://char1ss.github.io/{path}"><link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}styles.css?v={asset_version}"><script src="{prefix}gallery.js?v={asset_version}" defer></script></head>
 <body>{header(prefix)}{body}{footer()}</body></html>'''
 
 def visual(p, prefix=''):
@@ -37,8 +38,9 @@ def project_card(p):
     intro_link=f' <a href="{e(p["introLink"]["url"])}">{e(p["introLink"]["label"])}</a>' if p.get('introLink') else ''
     return f'''<article class="project"><a class="project-visual" href="{href}" tabindex="-1" aria-hidden="true">{visual(p)}</a><div><p class="project-category">{e(p['category'])}{' · '+e(p['year']) if p.get('year') else ''}</p><h3><a href="{href}">{e(p['title'])}</a></h3><p class="project-summary">{e(p['summary'])}{intro_link}</p>{tags(p)}<a class="project-link" href="{href}">Explore project <span aria-hidden="true">→</span><span class="sr-only"></span></a></div></article>'''
 
-def carousel(items, label, prefix='', compact=False):
+def carousel(items, label, prefix='', compact=False, hint=None):
     if not items:return ''
+    hint = hint or ('Paper figures' if compact else 'Images and video')
     slides=[]
     for i,m in enumerate(items):
         src=prefix+e(m['src']);caption=e(m['caption'])
@@ -48,7 +50,7 @@ def carousel(items, label, prefix='', compact=False):
         else:
             media=f'<a class="image-expand" href="{src}" aria-haspopup="dialog" aria-label="Open full image: {caption}"><img src="{src}" alt="{e(m.get("alt",m["caption"]))}" loading="lazy" decoding="async"></a>'
         slides.append(f'<figure class="slide" role="group" aria-label="{i+1} of {len(items)}">{media}<figcaption>{caption}</figcaption></figure>')
-    return f'''<section class="carousel {'compact' if compact else 'project-gallery'}" aria-label="{e(label)}"><div class="carousel-track" tabindex="0" aria-label="{e(label)}; use left and right arrow keys">{''.join(slides)}</div><div class="carousel-bar"><span class="gallery-hint">{'Paper figures' if compact else 'Images and video'} <span class="gallery-count" aria-live="polite">1 / {len(items)}</span></span><div class="carousel-buttons"><button type="button" class="prev" aria-label="Previous slide" disabled>←</button><button type="button" class="next" aria-label="Next slide">→</button></div></div></section>'''
+    return f'''<section class="carousel {'compact' if compact else 'project-gallery'}" aria-label="{e(label)}"><div class="carousel-track" tabindex="0" aria-label="{e(label)}; use left and right arrow keys">{''.join(slides)}</div><div class="carousel-bar"><span class="gallery-hint">{e(hint)} <span class="gallery-count" aria-live="polite">1 / {len(items)}</span></span><div class="carousel-buttons"><button type="button" class="prev" aria-label="Previous slide" disabled>←</button><button type="button" class="next" aria-label="Next slide">→</button></div></div></section>'''
 
 def publication(p):
     title=e(p['title'])
@@ -60,7 +62,8 @@ def publication(p):
 
 def experience(p):
     tasks=''.join(f'<li>{e(t)}</li>' for t in p['tasks'])
-    return f'<article class="experience"><span>{e(p["dates"])}</span><div class="experience-body"><div class="experience-heading"><span class="practice-logo"><img src="{e(p["logo"])}" alt="" width="56" height="56" loading="lazy" decoding="async"></span><div><h3>{e(p["organization"])}</h3><p class="role">{e(p["role"])}</p></div></div><ul class="practice-tasks">{tasks}</ul></div></article>'
+    media = '<div class="practice-gallery">' + carousel(p['gallery'], p['organization']+' gallery', compact=True, hint='Internship images') + '</div>' if p.get('gallery') else ''
+    return f'<article class="experience"><span>{e(p["dates"])}</span><div class="experience-body"><div class="experience-heading"><span class="practice-logo"><img src="{e(p["logo"])}" alt="" width="56" height="56" loading="lazy" decoding="async"></span><div><h3>{e(p["organization"])}</h3><p class="role">{e(p["role"])}</p></div></div><ul class="practice-tasks">{tasks}</ul>{media}</div></article>'
 
 def interests():
     images=''.join(f'<a class="sketch" href="{e(m["src"])}" aria-haspopup="dialog" aria-label="View drawing: {e(m["alt"])}"><img src="{e(m["thumb"])}" alt="{e(m["alt"])}" width="{m["width"]}" height="{m["height"]}" loading="lazy" decoding="async"></a>' for m in data['interests'])
