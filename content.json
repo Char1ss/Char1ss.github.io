@@ -29,7 +29,14 @@
       "mediaLabel": "Personal data / shared memory / AI agents",
       "mediaNote": "Personal data ownership and shared context for AI agents",
       "cover": "assets/projects/friend/cover.png",
-      "gallery": [],
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/framework-friend.png",
+          "caption": "friend. system framework",
+          "alt": "friend. system framework"
+        }
+      ],
       "introLink": {
         "url": "https://friend.open-world.cn/",
         "label": "Visit friend."
@@ -67,6 +74,12 @@
       "mediaNote": "Scene exploration and semantic selection",
       "cover": "assets/projects/semantic-3dgs/cover.webp",
       "gallery": [
+        {
+          "type": "image",
+          "src": "assets/framework-semantic-3dgs.png",
+          "caption": "Semantic 3DGS processing and interaction framework",
+          "alt": "Semantic 3DGS processing and interaction framework"
+        },
         {
           "type": "image",
           "src": "assets/projects/semantic-3dgs/media-07.webp",
@@ -128,6 +141,12 @@
       "mediaNote": "Scenes, character skins and body-driven play",
       "cover": "assets/projects/axis-waic/cover.webp",
       "gallery": [
+        {
+          "type": "image",
+          "src": "assets/framework-axis-waic.png",
+          "caption": "Axis creation and interaction framework",
+          "alt": "Axis creation and interaction framework"
+        },
         {
           "type": "image",
           "src": "assets/projects/axis-waic/media-02.webp",
@@ -193,6 +212,12 @@
       "cover": "assets/projects/surgical-4dgs/cover.webp",
       "gallery": [
         {
+          "type": "image",
+          "src": "assets/framework-surgical-4dgs.png",
+          "caption": "Surgical 4DGS reconstruction framework",
+          "alt": "Surgical 4DGS reconstruction framework"
+        },
+        {
           "type": "video",
           "src": "assets/projects/surgical-4dgs/media-01.mp4",
           "poster": "assets/projects/surgical-4dgs/media-01-poster.jpg",
@@ -205,7 +230,16 @@
           "caption": "Cosmos / SutureBot inference reproduction on reference data; separate from our self-collected four-camera reconstruction."
         }
       ],
-      "links": []
+      "links": [
+        {
+          "label": "Interactive 4DGS demo",
+          "url": "https://demo3d.open-world.cn/4dgs/"
+        }
+      ],
+      "introLink": {
+        "label": "Interactive 4DGS demo ↗",
+        "url": "https://demo3d.open-world.cn/4dgs/"
+      }
     },
     {
       "id": "garden-skills",
@@ -229,6 +263,12 @@
       "mediaNote": "Design principles, generated scenes and local revision",
       "cover": "assets/projects/garden-skills/cover-v2.webp",
       "gallery": [
+        {
+          "type": "image",
+          "src": "assets/framework-garden-skills.png",
+          "caption": "Garden Design Skills generation framework",
+          "alt": "Garden Design Skills generation framework"
+        },
         {
           "type": "image",
           "src": "assets/projects/garden-skills/immortal-mountain.webp",
@@ -618,16 +658,15 @@
   ],
   "practice": [
     {
-      "dates": "Mar 2026–present",
-      "organization": "Beijing Qijie Interactive",
-      "role": "World Model Technology & Product Lead",
+      "dates": "Jun–Sep 2025",
+      "organization": "Dongfeng R&D Institute",
+      "role": "AI Center Intern · Autonomous Driving Simulation",
       "tasks": [
-        "Lead Axis development, building server infrastructure, model-service integrations and a web 3D runtime from scratch to connect scene generation with interactive applications.",
-        "Develop prototypes for VR/AR applications and embodied interaction, connecting reconstructed or generated environments with user exploration and scene editing.",
-        "Investigate streaming first-person video understanding for personal agents, using M3-Agent and YOLO-assisted processing to study how people, objects and events are captured in memory.",
-        "Design a multimodal processing workspace for personal-agent development, preserving raw inputs and generating memory text with traceable source evidence and processing history."
+        "Construct Wuhan road networks and 3D environments using OSM, RoadRunner, SketchUp and Blender, and integrate them into UE4/CARLA.",
+        "Investigate 3DGS scene reconstruction and prototype a closed perception–decision–control loop for autonomous driving.",
+        "Design scenario tests and quantitative evaluation workflows to reproduce complex road conditions and assess end-to-end driving models."
       ],
-      "logo": "assets/practice/qijie.jpg"
+      "logo": "assets/practice/dongfeng.png"
     },
     {
       "dates": "Jun–Aug 2026",
@@ -641,15 +680,16 @@
       "logo": "assets/practice/yuaiweiwu.png"
     },
     {
-      "dates": "Jun–Sep 2025",
-      "organization": "Dongfeng R&D Institute",
-      "role": "AI Center Intern · Autonomous Driving Simulation",
+      "dates": "Mar 2026–present",
+      "organization": "Beijing Qijie Interactive",
+      "role": "World Model Technology & Product Lead",
       "tasks": [
-        "Construct Wuhan road networks and 3D environments using OSM, RoadRunner, SketchUp and Blender, and integrate them into UE4/CARLA.",
-        "Investigate 3DGS scene reconstruction and prototype a closed perception–decision–control loop for autonomous driving.",
-        "Design scenario tests and quantitative evaluation workflows to reproduce complex road conditions and assess end-to-end driving models."
+        "Lead Axis development, building server infrastructure, model-service integrations and a web 3D runtime from scratch to connect scene generation with interactive applications.",
+        "Develop prototypes for VR/AR applications and embodied interaction, connecting reconstructed or generated environments with user exploration and scene editing.",
+        "Investigate streaming first-person video understanding for personal agents, using M3-Agent and YOLO-assisted processing to study how people, objects and events are captured in memory.",
+        "Design a multimodal processing workspace for personal-agent development, preserving raw inputs and generating memory text with traceable source evidence and processing history."
       ],
-      "logo": "assets/practice/dongfeng.png"
+      "logo": "assets/practice/qijie.jpg"
     }
   ]
 }

@@ -11,7 +11,7 @@ def header(prefix=''):
     home = prefix or './'
     return f'''<a class="skip" href="#main">Skip to content</a><div class="wrap">
 <header class="header"><a class="wordmark" href="{home}">Personal Homepage</a>
-<nav aria-label="Main navigation"><a href="{home}#work">Work</a><a href="{home}#publications">Publications</a><a href="{home}#practice">Practice</a><a href="{home}#about">Education</a><a class="nav-cv" href="{prefix}assets/zhixiang-fan-cv.pdf">CV</a></nav></header>'''
+<nav aria-label="Main navigation"><a href="{home}#practice">Practice</a><a href="{home}#work">Work</a><a href="{home}#publications">Publications</a><a href="{home}#about">Education</a><a class="nav-cv" href="{prefix}assets/zhixiang-fan-cv.pdf">CV</a></nav></header>'''
 
 def footer():
     return '''<footer class="footer"><span>Zhixiang Fan · Tsinghua University</span><a href="mailto:fzx24@mails.tsinghua.edu.cn">fzx24@mails.tsinghua.edu.cn ↗</a></footer></div>'''
@@ -21,7 +21,7 @@ def document(title, description, body, prefix='', path=''):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(description)}">
 <meta name="theme-color" content="#ffffff"><meta property="og:type" content="website"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}">
-<link rel="canonical" href="https://char1ss.github.io/{path}"><link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}styles.css?v=bilingual-1"><script src="{prefix}gallery.js?v=bilingual-1" defer></script></head>
+<link rel="canonical" href="https://char1ss.github.io/{path}"><link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{prefix}styles.css?v=frameworks-20261105"><script src="{prefix}gallery.js?v=frameworks-20261105" defer></script></head>
 <body>{header(prefix)}{body}{footer()}</body></html>'''
 
 def visual(p, prefix=''):
@@ -67,9 +67,9 @@ def interests():
     return f'<section class="section interests" id="interests" aria-labelledby="interests-title"><div class="section-title"><h2 id="interests-title">Beyond research</h2><span>Hand drawing & personal interests</span></div><p class="interests-intro">A sketchbook of architecture, gardens and landscapes.</p><div class="sketch-wall">{images}</div></section>'
 
 home=f'''<main id="main"><section class="hero profile-hero" aria-labelledby="name"><img class="profile-photo" src="assets/profile/zhixiang-fan-original.jpg" alt="Portrait of Zhixiang Fan" width="1733" height="2428" fetchpriority="high"><div class="profile-text"><h1 id="name">Zhixiang Fan</h1><p class="eyebrow">Spatial intelligence · Design · Interaction</p><p class="intro">{e(data['intro'])}</p><p class="research-intro">{e(data['research'])}</p><div class="contact-links"><a href="mailto:{e(data['email'])}">Email ↗</a><a href="{e(data['github'])}">GitHub ↗</a><a href="assets/zhixiang-fan-cv.pdf">Curriculum vitae ↗</a></div></div></section>
+<section class="section" id="practice" aria-labelledby="practice-title"><div class="section-title"><h2 id="practice-title">Practice</h2></div>{''.join(experience(p) for p in data['practice'])}</section>
 <section class="section" id="work" aria-labelledby="work-title"><div class="section-title"><h2 id="work-title">Selected work</h2><span>Research, creative systems & teaching</span></div>{''.join(project_card(p) for p in data['projects'])}</section>
 <section class="section" id="publications" aria-labelledby="pub-title"><div class="section-title"><h2 id="pub-title">Publications</h2><span>Journal articles, challenge & interactive art</span></div><ol class="pub-list">{''.join(publication(p) for p in data['publications'])}</ol></section>
-<section class="section" id="practice" aria-labelledby="practice-title"><div class="section-title"><h2 id="practice-title">Practice</h2></div>{''.join(experience(p) for p in data['practice'])}</section>
 <section class="section" id="about" aria-labelledby="about-title"><div class="section-title"><h2 id="about-title">Education</h2></div><div class="about-grid"><div class="education-entry"><img class="school-emblem" src="assets/education/tsinghua.png" alt="Tsinghua University emblem" width="72" height="72" loading="lazy"><p class="education-item"><strong>Tsinghua University</strong><span>Beijing, China</span><span>PhD student in Design · Academy of Arts & Design<br>2024–present</span></p></div><div class="education-entry"><img class="school-emblem" src="assets/education/nanjing-forestry.jpeg" alt="Nanjing Forestry University emblem" width="72" height="72" loading="lazy"><p class="education-item"><strong>Nanjing Forestry University</strong><span>Nanjing, China</span><span>Master’s in Landscape Architecture<br>2021–2024</span></p></div></div></section>{interests()}</main>'''
 (ROOT/'index.html').write_text(document('Zhixiang Fan · Spatial Intelligence & Design',data['intro'],home),encoding='utf-8')
 

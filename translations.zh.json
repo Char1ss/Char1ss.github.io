@@ -191,7 +191,7 @@
   "Terrace and architecture study": "台地与建筑写生",
   "Pavilion and rockery study": "亭与假山写生",
   "Mar 2026–present": "2026 年 3 月至今",
-  "Beijing Qijie Interactive": "北京奇界互动",
+  "Beijing Qijie Interactive": "北京启界互动",
   "World Model Technology & Product Lead": "世界模型技术与产品负责人",
   "Lead Axis development, building server infrastructure, model-service integrations and a web 3D runtime from scratch to connect scene generation with interactive applications.": "主导 Axis 开发，从零搭建服务器基础设施、模型服务集成与网页三维运行时，将场景生成连接到交互应用。",
   "Develop prototypes for VR/AR applications and embodied interaction, connecting reconstructed or generated environments with user exploration and scene editing.": "开发 VR/AR 应用与具身交互原型，将重建或生成环境连接到用户探索和场景编辑。",
@@ -266,5 +266,12 @@
   "Your browser does not support this video.": "你的浏览器不支持播放此视频。",
   "Download video": "下载视频",
   "Media forthcoming": "素材待补充",
-  "Images and video will be added here.": "图片和视频将在此补充。"
+  "Images and video will be added here.": "图片和视频将在此补充。",
+  "friend. system framework": "friend. 系统框架",
+  "Semantic 3DGS processing and interaction framework": "语义 3DGS 处理与交互框架",
+  "Axis creation and interaction framework": "Axis 创作与交互框架",
+  "Surgical 4DGS reconstruction framework": "手术 4DGS 重建框架",
+  "Garden Design Skills generation framework": "园林 Design Skills 生成框架",
+  "Interactive 4DGS demo": "4DGS 交互演示",
+  "Interactive 4DGS demo ↗": "4DGS 交互演示 ↗"
 }
