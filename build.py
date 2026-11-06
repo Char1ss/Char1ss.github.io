@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 data = json.loads((ROOT / 'content.json').read_text(encoding='utf-8'))
 e = escape
+listed_projects = [p for p in data["projects"] if p.get("listed", True)]
 
 def header(prefix=''):
     home = prefix or './'
@@ -17,7 +18,7 @@ def footer():
     return '''<footer class="footer"><span>Zhixiang Fan · Tsinghua University</span><a href="mailto:fzx24@mails.tsinghua.edu.cn">fzx24@mails.tsinghua.edu.cn ↗</a></footer></div>'''
 
 def document(title, description, body, prefix='', path=''):
-    asset_version = 'frameworks-20261105' if path else 'practice-20261105'
+    asset_version = 'projects-20261106'
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(description)}">
@@ -71,7 +72,7 @@ def interests():
 
 home=f'''<main id="main"><section class="hero profile-hero" aria-labelledby="name"><img class="profile-photo" src="assets/profile/zhixiang-fan-original.jpg" alt="Portrait of Zhixiang Fan" width="1733" height="2428" fetchpriority="high"><div class="profile-text"><h1 id="name">Zhixiang Fan</h1><p class="eyebrow">Spatial intelligence · Design · Interaction</p><p class="intro">{e(data['intro'])}</p><p class="research-intro">{e(data['research'])}</p><div class="contact-links"><a href="mailto:{e(data['email'])}">Email ↗</a><a href="{e(data['github'])}">GitHub ↗</a><a href="assets/zhixiang-fan-cv.pdf">Curriculum vitae ↗</a></div></div></section>
 <section class="section" id="practice" aria-labelledby="practice-title"><div class="section-title"><h2 id="practice-title">Practice</h2></div>{''.join(experience(p) for p in data['practice'])}</section>
-<section class="section" id="work" aria-labelledby="work-title"><div class="section-title"><h2 id="work-title">Selected work</h2><span>Research, creative systems & teaching</span></div>{''.join(project_card(p) for p in data['projects'])}</section>
+<section class="section" id="work" aria-labelledby="work-title"><div class="section-title"><h2 id="work-title">Selected work</h2><span>Research, creative systems & teaching</span></div>{''.join(project_card(p) for p in listed_projects)}</section>
 <section class="section" id="publications" aria-labelledby="pub-title"><div class="section-title"><h2 id="pub-title">Publications</h2><span>Journal articles, challenge & interactive art</span></div><ol class="pub-list">{''.join(publication(p) for p in data['publications'])}</ol></section>
 <section class="section" id="about" aria-labelledby="about-title"><div class="section-title"><h2 id="about-title">Education</h2></div><div class="about-grid"><div class="education-entry"><img class="school-emblem" src="assets/education/tsinghua.png" alt="Tsinghua University emblem" width="72" height="72" loading="lazy"><p class="education-item"><strong>Tsinghua University</strong><span>Beijing, China</span><span>PhD student in Design · Academy of Arts & Design<br>2024–present</span></p></div><div class="education-entry"><img class="school-emblem" src="assets/education/nanjing-forestry.jpeg" alt="Nanjing Forestry University emblem" width="72" height="72" loading="lazy"><p class="education-item"><strong>Nanjing Forestry University</strong><span>Nanjing, China</span><span>Master’s in Landscape Architecture<br>2021–2024</span></p></div></div></section>{interests()}</main>'''
 (ROOT/'index.html').write_text(document('Zhixiang Fan · Spatial Intelligence & Design',data['intro'],home),encoding='utf-8')
@@ -80,7 +81,7 @@ for i,p in enumerate(data['projects']):
     prefix='../../'
     links=''.join(f'<a href="{e(x["url"])}">{e(x["label"])} ↗</a>' for x in p['links'])
     gallery=carousel(p['gallery'],p['title']+' gallery',prefix)
-    nxt=data['projects'][(i+1)%len(data['projects'])]
+    nxt = listed_projects[(listed_projects.index(p)+1)%len(listed_projects)] if p in listed_projects else listed_projects[0]
     content=f'''<main id="main"><a class="back" href="../../#work">← All projects</a><section class="project-hero"><p class="eyebrow">{e(p['category'])}{' · '+e(p['year']) if p.get('year') else ''}</p><h1>{e(p['title'])}</h1><p class="project-subtitle">{e(p['subtitle'])}</p>{tags(p)}</section><div class="detail-visual">{visual(p,prefix)}</div><div class="detail-body"><aside class="project-meta"><div><h2>My contribution</h2><p>{e(p['role'])}</p></div><div><h2>Project focus</h2><p>{e(p['mediaNote'])}</p>{links}</div></aside><div class="project-copy"><section><h2>{e(p.get('questionTitle', 'Research question'))}</h2><p>{e(p['question'])}</p></section><section><h2>{e(p.get('approachTitle', 'Approach'))}</h2><p>{e(p['approach'])}</p></section><section><h2>{e(p.get('outcomeTitle', 'Current work'))}</h2><p>{e(p['outcome'])}</p></section><p class="scope">{e(p['scope'])}</p></div></div><div class="gallery">{gallery}</div><div class="project-pager"><a href="../../#work"><small>Selected work</small>← Back to overview</a><a href="../{nxt['id']}/"><small>Next project</small>{e(nxt['title'])} →</a></div></main>'''
     path=f'projects/{p["id"]}/'
     dest=ROOT/path;dest.mkdir(parents=True,exist_ok=True)

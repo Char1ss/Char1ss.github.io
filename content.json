@@ -6,51 +6,65 @@
   "research": "I focus on translating spatial design knowledge into forms that are computable and interactive, enabling reconstructed or generated 3D environments to be understood, inspected, and modified.",
   "projects": [
     {
-      "id": "friend",
+      "id": "autonomous-driving",
       "number": "01",
-      "title": "friend. — Personal Data Wallet",
-      "subtitle": "One personal context that grows with you, across apps, devices and AI agents.",
-      "category": "Personal AI & memory",
-      "year": "2026",
-      "tags": [
-        "Personal data wallet",
-        "Shared memory",
-        "MCP"
-      ],
-      "summary": "A personal data wallet that brings conversations, meeting notes and everyday records into one place. friend. connects this growing personal context to AI agents through MCP, so they can understand the user without starting from scratch.",
-      "role": "Personal project: friend., a data wallet and memory system for AI agents.",
-      "questionTitle": "The idea",
-      "question": "Personal context is scattered across apps, devices and platforms. friend. brings it together into a persistent memory that users can review and choose to share, helping AI agents provide relevant assistance without repeatedly asking for the same background.",
-      "approachTitle": "Data, evidence & shared context",
-      "approach": "The local memory application organizes files, conversations and everyday records while preserving original material and evidence links. A WebUI supports review and search; MCP connects the memory to agents such as Codex and Claude. Phone recordings, Notion sync and an information-source API provide additional ways to bring context into the same system.",
-      "outcomeTitle": "Published project",
-      "outcome": "The project website introduces friend. and its approach to personal context. The public GitHub repository provides documentation and downloadable releases of friend. Memory for macOS on Apple Silicon, Windows and Linux.",
-      "scope": "Memories, files and evidence are stored on the user’s computer. Content used for model processing is sent to configured model endpoints or the friend. account model service.",
-      "mediaLabel": "Personal data / shared memory / AI agents",
-      "mediaNote": "Personal data ownership and shared context for AI agents",
-      "cover": "assets/projects/friend/cover.png",
+      "year": "2025",
+      "cover": "assets/practice/dongfeng-roadrunner-01.webp",
       "gallery": [
         {
           "type": "image",
-          "src": "assets/framework-friend.png",
-          "caption": "friend. system framework",
-          "alt": "friend. system framework"
-        }
-      ],
-      "introLink": {
-        "url": "https://friend.open-world.cn/",
-        "label": "Visit friend."
-      },
-      "links": [
-        {
-          "url": "https://friend.open-world.cn/",
-          "label": "Project website"
+          "src": "assets/practice/dongfeng-roadrunner-01.webp",
+          "caption": "Urban road simulation scene",
+          "alt": "Urban road simulation scene"
         },
         {
-          "url": "https://github.com/OpenWorld-Agent/friend.",
-          "label": "GitHub · releases & documentation"
+          "type": "image",
+          "src": "assets/practice/dongfeng-roadrunner-02.webp",
+          "caption": "Vehicle simulation and debugging",
+          "alt": "Vehicle simulation and debugging"
+        },
+        {
+          "type": "image",
+          "src": "assets/practice/dongfeng-roadrunner-03.webp",
+          "caption": "Road environment overview",
+          "alt": "Road environment overview"
+        },
+        {
+          "type": "image",
+          "src": "assets/practice/dongfeng-roadrunner-04.webp",
+          "caption": "RoadRunner road network editing",
+          "alt": "RoadRunner road network editing"
+        },
+        {
+          "type": "image",
+          "src": "assets/practice/dongfeng-roadrunner-05.webp",
+          "caption": "SketchUp architectural modeling",
+          "alt": "SketchUp architectural modeling"
+        },
+        {
+          "type": "image",
+          "src": "assets/practice/dongfeng-roadrunner-06.webp",
+          "caption": "Scene integration in Unreal Engine",
+          "alt": "Scene integration in Unreal Engine"
         }
-      ]
+      ],
+      "links": [],
+      "tags": [
+        "OSM + RoadRunner",
+        "UE4 / CARLA",
+        "Driving simulation"
+      ],
+      "title": "Simulation Environments for Autonomous Driving World Models",
+      "subtitle": "Building road networks and interactive 3D environments for autonomous driving simulation.",
+      "category": "Autonomous driving simulation",
+      "summary": "Developed during my internship at Dongfeng R&D Institute, this project connects Wuhan road network construction, architectural modeling and UE4/CARLA integration to build simulation environments for autonomous driving research.",
+      "role": "Contributed to road network construction, 3D environment modeling, scene integration and simulation testing as an AI Center intern at Dongfeng R&D Institute.",
+      "question": "How can real road layouts and built environments be translated into controllable simulation scenes for developing and inspecting autonomous driving systems?",
+      "approach": "Use OSM and RoadRunner to construct road networks, model buildings and surrounding environments with SketchUp and Blender, and integrate the assets into UE4/CARLA. Connect scene construction with vehicle simulation, scenario testing and exploration of a perception–decision–control loop.",
+      "outcome": "Built road and architectural environments and carried out vehicle simulation and integration work. The six images document rendered road scenes, vehicle debugging, RoadRunner editing, SketchUp modeling and Unreal Engine integration.",
+      "scope": "Internship project documenting road network construction, architectural environments and vehicle simulation integration.",
+      "mediaLabel": "Road networks / 3D environments / vehicle simulation",
+      "mediaNote": "Dongfeng R&D Institute · road environments and autonomous driving simulation"
     },
     {
       "id": "semantic-3dgs",
@@ -120,8 +134,60 @@
       "links": []
     },
     {
-      "id": "axis-waic",
+      "id": "surgical-4dgs",
       "number": "03",
+      "title": "4D Reconstruction of Suturing",
+      "subtitle": "Reconstructing a changing workspace from four camera views.",
+      "category": "Dynamic reconstruction",
+      "year": "2026",
+      "tags": [
+        "4DGS",
+        "Four-camera capture",
+        "Self-collected data"
+      ],
+      "summary": "A medical reconstruction project using four camera views and self-collected recordings of a doctor performing suturing. We use 4D Gaussian Splatting to reconstruct the changing scene over time.",
+      "role": "Work on the multi-camera capture and 4D reconstruction pipeline within a collaborative project.",
+      "question": "How can a compact multi-camera setup capture and reconstruct a fine-grained procedure with moving hands, instruments and frequent occlusion?",
+      "approach": "Our team records the suturing procedure from four camera views and reconstructs the temporal scene using 4D Gaussian Splatting. The work connects data acquisition with dynamic reconstruction and inspection of the resulting sequence.",
+      "outcome": "A reconstruction prototype on self-collected suturing recordings. The project extends earlier practical work with dynamic Gaussian reconstruction on public datasets.",
+      "scope": "Ongoing research on dynamic reconstruction from self-collected, four-camera recordings.",
+      "mediaLabel": "Four views / one dynamic scene",
+      "mediaNote": "Capture setup and reconstructed suturing sequence",
+      "cover": "assets/projects/surgical-4dgs/cover.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/framework-surgical-4dgs.png",
+          "caption": "Surgical 4DGS reconstruction framework",
+          "alt": "Surgical 4DGS reconstruction framework"
+        },
+        {
+          "type": "video",
+          "src": "assets/projects/surgical-4dgs/media-01.mp4",
+          "poster": "assets/projects/surgical-4dgs/media-01-poster.jpg",
+          "caption": "Four-camera recording of the suturing procedure"
+        },
+        {
+          "type": "video",
+          "src": "assets/projects/surgical-4dgs/media-03.mp4",
+          "poster": "assets/projects/surgical-4dgs/media-03-poster.jpg",
+          "caption": "Cosmos / SutureBot inference reproduction on reference data; separate from our self-collected four-camera reconstruction."
+        }
+      ],
+      "links": [
+        {
+          "label": "Interactive 4DGS demo",
+          "url": "https://demo3d.open-world.cn/4dgs/"
+        }
+      ],
+      "introLink": {
+        "label": "Interactive 4DGS demo ↗",
+        "url": "https://demo3d.open-world.cn/4dgs/"
+      }
+    },
+    {
+      "id": "axis-waic",
+      "number": "04",
       "title": "Axis at WAIC",
       "subtitle": "Minecraft scene creation, character skins and motion-based play.",
       "category": "Creative tools & embodied play",
@@ -187,58 +253,6 @@
       "introLink": {
         "label": "axis.open-world.cn",
         "url": "https://axis.open-world.cn"
-      }
-    },
-    {
-      "id": "surgical-4dgs",
-      "number": "04",
-      "title": "4D Reconstruction of Suturing",
-      "subtitle": "Reconstructing a changing workspace from four camera views.",
-      "category": "Dynamic reconstruction",
-      "year": "2026",
-      "tags": [
-        "4DGS",
-        "Four-camera capture",
-        "Self-collected data"
-      ],
-      "summary": "A medical reconstruction project using four camera views and self-collected recordings of a doctor performing suturing. We use 4D Gaussian Splatting to reconstruct the changing scene over time.",
-      "role": "Work on the multi-camera capture and 4D reconstruction pipeline within a collaborative project.",
-      "question": "How can a compact multi-camera setup capture and reconstruct a fine-grained procedure with moving hands, instruments and frequent occlusion?",
-      "approach": "Our team records the suturing procedure from four camera views and reconstructs the temporal scene using 4D Gaussian Splatting. The work connects data acquisition with dynamic reconstruction and inspection of the resulting sequence.",
-      "outcome": "A reconstruction prototype on self-collected suturing recordings. The project extends earlier practical work with dynamic Gaussian reconstruction on public datasets.",
-      "scope": "Ongoing research on dynamic reconstruction from self-collected, four-camera recordings.",
-      "mediaLabel": "Four views / one dynamic scene",
-      "mediaNote": "Capture setup and reconstructed suturing sequence",
-      "cover": "assets/projects/surgical-4dgs/cover.webp",
-      "gallery": [
-        {
-          "type": "image",
-          "src": "assets/framework-surgical-4dgs.png",
-          "caption": "Surgical 4DGS reconstruction framework",
-          "alt": "Surgical 4DGS reconstruction framework"
-        },
-        {
-          "type": "video",
-          "src": "assets/projects/surgical-4dgs/media-01.mp4",
-          "poster": "assets/projects/surgical-4dgs/media-01-poster.jpg",
-          "caption": "Four-camera recording of the suturing procedure"
-        },
-        {
-          "type": "video",
-          "src": "assets/projects/surgical-4dgs/media-03.mp4",
-          "poster": "assets/projects/surgical-4dgs/media-03-poster.jpg",
-          "caption": "Cosmos / SutureBot inference reproduction on reference data; separate from our self-collected four-camera reconstruction."
-        }
-      ],
-      "links": [
-        {
-          "label": "Interactive 4DGS demo",
-          "url": "https://demo3d.open-world.cn/4dgs/"
-        }
-      ],
-      "introLink": {
-        "label": "Interactive 4DGS demo ↗",
-        "url": "https://demo3d.open-world.cn/4dgs/"
       }
     },
     {
@@ -311,7 +325,7 @@
     {
       "id": "ai-teaching-practice",
       "number": "06",
-      "title": "AI Teaching Practice: Community Design",
+      "title": "AI Interaction Design in Teaching Scenarios",
       "subtitle": "Exploring communities for home life and hybrid work through AI tools and resident role-play.",
       "category": "AI teaching practice",
       "year": "",
@@ -365,6 +379,54 @@
         }
       ],
       "links": []
+    },
+    {
+      "id": "friend",
+      "number": "01",
+      "title": "friend. — Personal Data Wallet",
+      "subtitle": "One personal context that grows with you, across apps, devices and AI agents.",
+      "category": "Personal AI & memory",
+      "year": "2026",
+      "tags": [
+        "Personal data wallet",
+        "Shared memory",
+        "MCP"
+      ],
+      "summary": "A personal data wallet that brings conversations, meeting notes and everyday records into one place. friend. connects this growing personal context to AI agents through MCP, so they can understand the user without starting from scratch.",
+      "role": "Personal project: friend., a data wallet and memory system for AI agents.",
+      "questionTitle": "The idea",
+      "question": "Personal context is scattered across apps, devices and platforms. friend. brings it together into a persistent memory that users can review and choose to share, helping AI agents provide relevant assistance without repeatedly asking for the same background.",
+      "approachTitle": "Data, evidence & shared context",
+      "approach": "The local memory application organizes files, conversations and everyday records while preserving original material and evidence links. A WebUI supports review and search; MCP connects the memory to agents such as Codex and Claude. Phone recordings, Notion sync and an information-source API provide additional ways to bring context into the same system.",
+      "outcomeTitle": "Published project",
+      "outcome": "The project website introduces friend. and its approach to personal context. The public GitHub repository provides documentation and downloadable releases of friend. Memory for macOS on Apple Silicon, Windows and Linux.",
+      "scope": "Memories, files and evidence are stored on the user’s computer. Content used for model processing is sent to configured model endpoints or the friend. account model service.",
+      "mediaLabel": "Personal data / shared memory / AI agents",
+      "mediaNote": "Personal data ownership and shared context for AI agents",
+      "cover": "assets/projects/friend/cover.png",
+      "gallery": [
+        {
+          "type": "image",
+          "src": "assets/framework-friend.png",
+          "caption": "friend. system framework",
+          "alt": "friend. system framework"
+        }
+      ],
+      "introLink": {
+        "url": "https://friend.open-world.cn/",
+        "label": "Visit friend."
+      },
+      "links": [
+        {
+          "url": "https://friend.open-world.cn/",
+          "label": "Project website"
+        },
+        {
+          "url": "https://github.com/OpenWorld-Agent/friend.",
+          "label": "GitHub · releases & documentation"
+        }
+      ],
+      "listed": false
     }
   ],
   "publications": [
@@ -666,45 +728,7 @@
         "Investigate 3DGS scene reconstruction and prototype a closed perception–decision–control loop for autonomous driving.",
         "Design scenario tests and quantitative evaluation workflows to reproduce complex road conditions and assess end-to-end driving models."
       ],
-      "logo": "assets/practice/dongfeng.png",
-      "gallery": [
-        {
-          "type": "image",
-          "src": "assets/practice/dongfeng-roadrunner-01.webp",
-          "caption": "Urban road simulation scene",
-          "alt": "Urban road simulation scene"
-        },
-        {
-          "type": "image",
-          "src": "assets/practice/dongfeng-roadrunner-02.webp",
-          "caption": "Vehicle simulation and debugging",
-          "alt": "Vehicle simulation and debugging"
-        },
-        {
-          "type": "image",
-          "src": "assets/practice/dongfeng-roadrunner-03.webp",
-          "caption": "Road environment overview",
-          "alt": "Road environment overview"
-        },
-        {
-          "type": "image",
-          "src": "assets/practice/dongfeng-roadrunner-04.webp",
-          "caption": "RoadRunner road network editing",
-          "alt": "RoadRunner road network editing"
-        },
-        {
-          "type": "image",
-          "src": "assets/practice/dongfeng-roadrunner-05.webp",
-          "caption": "SketchUp architectural modeling",
-          "alt": "SketchUp architectural modeling"
-        },
-        {
-          "type": "image",
-          "src": "assets/practice/dongfeng-roadrunner-06.webp",
-          "caption": "Scene integration in Unreal Engine",
-          "alt": "Scene integration in Unreal Engine"
-        }
-      ]
+      "logo": "assets/practice/dongfeng.png"
     },
     {
       "dates": "Jun–Aug 2026",

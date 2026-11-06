@@ -45,3 +45,5 @@ html:lang(zh-CN) .project-summary,html:lang(zh-CN) .project-copy p{line-height:1
 .practice-gallery .carousel-bar{margin-top:10px}
 @media(max-width:850px){.practice-gallery .slide{flex-basis:calc((100% - 20px)/3)}}
 @media(max-width:600px){.practice-gallery{margin-left:0}.practice-gallery .slide{flex-basis:42%}}
+
+.project-visual[href^="projects/autonomous-driving/"] .project-cover{object-fit:cover}

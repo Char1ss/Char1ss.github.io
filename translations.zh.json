@@ -280,5 +280,20 @@
   "Scene integration in Unreal Engine": "Unreal Engine 场景集成",
   "Internship images": "实习图片",
   "Evaluate voice and audio interactions in AI teaching scenarios, including answer guessing, spoken mathematical expressions and behavior across long conversations.": "评估教学场景中的语音、音频交互，包括猜测答案、数学公式口语化表达与长对话中的表现。",
-  "Use Volcengine to build resumable extraction and validation workflows for teaching voice/audio interaction records, processing 592 conversations and 9,072 contextual messages from approximately 11 GB of cloud JSONL data.": "使用火山引擎处理教学场景中的语音、音频交互记录，面向约 11 GB 云端 JSONL 数据构建可断点续跑的提取与验证流程，覆盖 592 段对话和 9,072 条上下文消息。"
+  "Use Volcengine to build resumable extraction and validation workflows for teaching voice/audio interaction records, processing 592 conversations and 9,072 contextual messages from approximately 11 GB of cloud JSONL data.": "使用火山引擎处理教学场景中的语音、音频交互记录，面向约 11 GB 云端 JSONL 数据构建可断点续跑的提取与验证流程，覆盖 592 段对话和 9,072 条上下文消息。",
+  "Simulation Environments for Autonomous Driving World Models": "自动驾驶世界模型仿真场景",
+  "Building road networks and interactive 3D environments for autonomous driving simulation.": "面向自动驾驶仿真，构建道路网络与可交互的三维环境。",
+  "Autonomous driving simulation": "自动驾驶仿真",
+  "Developed during my internship at Dongfeng R&D Institute, this project connects Wuhan road network construction, architectural modeling and UE4/CARLA integration to build simulation environments for autonomous driving research.": "在东风研发总院实习期间，围绕武汉道路网络构建、建筑与环境建模及 UE4/CARLA 集成，搭建面向自动驾驶研究的仿真场景。",
+  "Contributed to road network construction, 3D environment modeling, scene integration and simulation testing as an AI Center intern at Dongfeng R&D Institute.": "作为东风研发总院 AI 中心实习生，参与道路网络构建、三维环境建模、场景集成与仿真测试。",
+  "How can real road layouts and built environments be translated into controllable simulation scenes for developing and inspecting autonomous driving systems?": "如何将真实道路布局与建成环境转化为可控的仿真场景，支持自动驾驶系统的开发与检查？",
+  "Use OSM and RoadRunner to construct road networks, model buildings and surrounding environments with SketchUp and Blender, and integrate the assets into UE4/CARLA. Connect scene construction with vehicle simulation, scenario testing and exploration of a perception–decision–control loop.": "使用 OSM 与 RoadRunner 构建道路网络，通过 SketchUp 和 Blender 制作建筑及周边环境，并将资产集成至 UE4/CARLA。将场景搭建与车辆仿真、场景测试及感知—决策—控制闭环探索连接起来。",
+  "Built road and architectural environments and carried out vehicle simulation and integration work. The six images document rendered road scenes, vehicle debugging, RoadRunner editing, SketchUp modeling and Unreal Engine integration.": "完成道路与建筑环境搭建，并开展车辆仿真与集成工作。六张图片展示道路场景效果、车辆调试、RoadRunner 编辑、SketchUp 建模和 Unreal Engine 场景集成。",
+  "Road networks / 3D environments / vehicle simulation": "道路网络 / 三维环境 / 车辆仿真",
+  "Dongfeng R&D Institute · road environments and autonomous driving simulation": "东风研发总院 · 道路环境与自动驾驶仿真",
+  "Driving simulation": "驾驶仿真",
+  "AI Interaction Design in Teaching Scenarios": "教学场景中的AI交互设计",
+  "AI Interaction Design in Teaching Scenarios · Zhixiang Fan": "教学场景中的AI交互设计 · Zhixiang Fan",
+  "Internship project documenting road network construction, architectural environments and vehicle simulation integration.": "实习项目，记录道路网络、建筑环境与车辆仿真场景的构建和集成。",
+  "Simulation Environments for Autonomous Driving World Models · Zhixiang Fan": "自动驾驶世界模型仿真场景 · Zhixiang Fan"
 }
