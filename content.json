@@ -382,7 +382,7 @@
     },
     {
       "id": "friend",
-      "number": "01",
+      "number": "07",
       "title": "friend. — Personal Data Wallet",
       "subtitle": "One personal context that grows with you, across apps, devices and AI agents.",
       "category": "Personal AI & memory",
@@ -425,8 +425,7 @@
           "url": "https://github.com/OpenWorld-Agent/friend.",
           "label": "GitHub · releases & documentation"
         }
-      ],
-      "listed": false
+      ]
     }
   ],
   "publications": [

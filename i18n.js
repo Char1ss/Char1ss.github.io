@@ -1,6 +1,5 @@
 // English HTML is the fallback; translations are bundled by build.py.
 (() => {
-  const storageKey = 'portfolio-language';
   const dictionary = PORTFOLIO_ZH;
   const prefixes = ['Open full image: ', 'Read PDF: ', 'DOI for ', 'View drawing: ', '← '];
   const suffixes = ['; use left and right arrow keys', ' figures', ' gallery', ' ↗', ' →'];
@@ -68,7 +67,6 @@
       params.set('lang', lang);
       link.setAttribute('href', `${path}?${params}${hash === undefined ? '' : '#' + hash}`);
     }
-    try { localStorage.setItem(storageKey, lang); } catch { /* Private browsing may block storage. */ }
     if (updateURL) {
       const url = new URL(location.href);
       url.searchParams.set('lang', lang);
@@ -79,7 +77,7 @@
   function preferredLanguage() {
     const requested = new URLSearchParams(location.search).get('lang');
     if (requested === 'zh' || requested === 'en') return requested;
-    try { return localStorage.getItem(storageKey) === 'zh' ? 'zh' : 'en'; } catch { return 'en'; }
+    return 'en';
   }
   toggle.addEventListener('click', () => apply(language === 'en' ? 'zh' : 'en', true));
   window.addEventListener('pageshow', () => apply(preferredLanguage()));

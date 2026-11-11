@@ -18,7 +18,7 @@ def footer():
     return '''<footer class="footer"><span>Zhixiang Fan · Tsinghua University</span><a href="mailto:fzx24@mails.tsinghua.edu.cn">fzx24@mails.tsinghua.edu.cn ↗</a></footer></div>'''
 
 def document(title, description, body, prefix='', path=''):
-    asset_version = 'projects-20261106'
+    asset_version = 'language-20261111'
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(description)}">
